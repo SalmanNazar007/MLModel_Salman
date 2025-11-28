@@ -27,4 +27,4 @@ jobs:
           context: .
           file: ./dockerfile  # change if your Dockerfile has a different name or path
           push: true
-          tags: anasriad8/telco-fastapi:latest
+          tags: salmannazar007/mltest:latest,salmannazar007/mltest:${{ github.run_number }}
