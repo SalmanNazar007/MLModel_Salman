@@ -18,8 +18,13 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
+<<<<<<< HEAD
           username: Salmannazar007
           password: Nazar@1957 # It's recommended to use GitHub Secrets for sensitive data
+=======
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+>>>>>>> 40e59a8 (update CI workflow to use new Docker image tags and add new source file)
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
